@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal9810-common/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/universal9810-common/proprietary/bin/lpm:system/bin/lpm \
+    #vendor/samsung/universal9810-common/proprietary/bin/lpm:system/bin/lpm \
     vendor/samsung/universal9810-common/proprietary/lib64/libmaet.so:system/lib64/libmaet.so \
     vendor/samsung/universal9810-common/proprietary/lib64/libsxqk_skia.so:system/lib64/libsxqk_skia.so \
     vendor/samsung/universal9810-common/proprietary/media/battery_error.spi:system/media/battery_error.spi \
@@ -37,3 +37,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal9810-common/proprietary/media/slow_charging_usb.spi:system/media/slow_charging_usb.spi \
     vendor/samsung/universal9810-common/proprietary/media/temperature_limit_usb.spi:system/media/temperature_limit_usb.spi \
     vendor/samsung/universal9810-common/proprietary/media/water_protection_usb.spi:system/media/water_protection_usb.spi
+
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/samsung/universal9810-common/proprietary/app,$(TARGET_COPY_OUT_VENDOR)/app) \
+	$(call find-copy-subdir-files,*,vendor/samsung/universal9810-common/proprietary/bin,$(TARGET_COPY_OUT_VENDOR)/bin) \
+	$(call find-copy-subdir-files,*,vendor/samsung/universal9810-common/proprietary/etc,$(TARGET_COPY_OUT_VENDOR)/etc) \
+	$(call find-copy-subdir-files,*,vendor/samsung/universal9810-common/proprietary/firmware,$(TARGET_COPY_OUT_VENDOR)/firmware) \
+	$(call find-copy-subdir-files,*,vendor/samsung/universal9810-common/proprietary/lib,$(TARGET_COPY_OUT_VENDOR)/lib) \
+	$(call find-copy-subdir-files,*,vendor/samsung/universal9810-common/proprietary/lib64,$(TARGET_COPY_OUT_VENDOR)/lib64) \
+	$(call find-copy-subdir-files,*,vendor/samsung/universal9810-common/proprietary/media,$(TARGET_COPY_OUT_VENDOR)/media) \

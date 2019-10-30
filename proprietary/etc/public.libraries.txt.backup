@@ -1,0 +1,15 @@
+libDLInterface.camera.samsung.so
+libMcClient.so
+libOpenCL.so
+libSceneDetector_v1.camera.samsung.so
+libget_icd.so
+libpa.so
+libsecGestureAttribute.camera.samsung.so
+libsecure_storage_jni.so
+libsmart_cropping.camera.samsung.so
+libsnap_caffe.so
+libsnap_caffe_wrapper.so
+libsnap_compute.so
+libsnap_compute_wrapper.so
+libsnap_vndk.so
+libtensorflow_inference_native.so 64
